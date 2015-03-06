@@ -4,7 +4,7 @@
 
 Comparison sliders are nothing new. There are even pure CSS implementations that is nothing but short of amazing. However, I wasn’t able to find a truly responsive one that was simple enough for our needs. This gave me the chance (and excuse) to build one myself that can be used anywhere.
 
-The [Medium article](https://medium.com/p/f3a691a9dd71) details each decision made along the way.
+The [Medium article](https://medium.com/jotform-form-builder/making-a-responsive-image-comparison-slider-in-css-and-javascript-f3a691a9dd71) details each decision made along the way.
 
 #### DEMO
 
