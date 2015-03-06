@@ -53,3 +53,11 @@
       inset 0 2px 0 rgba(255,255,255,.5),
       inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)*/ 
 }
+
+.ba-slider .handle.draggable:after {
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+    line-height:50px;
+    font-size:30px;
+}
