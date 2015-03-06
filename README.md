@@ -21,5 +21,10 @@ The [Medium article](https://medium.com/jotform-form-builder/making-a-responsive
 
 #### USAGE
 
-1. Include jQuery, jQuery Mobile and before-after.js in your HTML
-2. Include the HTML provided in sample.html
+Simply copy the contents of the sample.html to your own page.
+
+
+#### LICENSE
+
+The MIT License (MIT)
+Copyright (c) 2015 JotForm
