@@ -8,7 +8,8 @@ The [Medium article](https://medium.com/p/f3a691a9dd71) details each decision I 
 
 #### DEMO
 
-[Landing page usage](http://jotform.com/formscentral)
+[Landing page usage](http://jotform.com/formscentral)  
+
 [Codepen Demo](http://codepen.io/bamf/pen/jEpxOX)
 
 ![Image comparison](https://d262ilb51hltx0.cloudfront.net/max/800/1*N43g_K5grRctYcudDi3gLQ.gif)
