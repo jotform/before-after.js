@@ -49,27 +49,23 @@ function drags(dragElement, resizeElement, container) {
   });
 }
 
-// Get the .slider width
-function sliderAdjust() {
-  $('.ba-slider').each(function(){
-    var cur = $(this);
-    var width = cur.width()+’px’;
-    cur.find('.resize img').css('width', width); 
-  });
-}
-
+// Call & init
 $(document).ready(function(){
-  // Init slider on page load
-  sliderAdjust();
-  
-  // Re-adjust on resize. We all do it.
-  $(window).resize(function(){
-    sliderAdjust();
-  });
-  
-  // Init dragging
   $('.ba-slider').each(function(){
     var cur = $(this);
+    // Adjust the slider
+    var width = cur.width()+'px';
+    cur.find('.resize img').css('width', width);
+    // Bind dragging events
     drags(cur.find('.handle'), cur.find('.resize'), cur);
+  });
+});
+
+// Update sliders on resize. 
+$(window).resize(function(){
+  $('.ba-slider').each(function(){
+    var cur = $(this);
+    var width = cur.width()+'px';
+    cur.find('.resize img').css('width', width);
   });
 });
