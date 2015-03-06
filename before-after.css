@@ -1,14 +1,14 @@
-.slider {
+.ba-slider {
     position: relative;
     overflow: hidden;
 }
  
-.slider img {
+.ba-slider img {
     width: 100%;
     display:block;
 }
  
-.resize {
+.ba-slider .resize {
     position: absolute;
     top:0;
     left: 0;
@@ -18,7 +18,7 @@
 }
 
 
-.handle { /* Thin line seperator */
+.ba-slider .handle { /* Thin line seperator */
   position:absolute; 
   left:50%;
   top:0;
@@ -30,7 +30,7 @@
   cursor: ew-resize;
 }
  
-.handle:after {  /* Big orange knob  */
+.ba-slider .handle:after {  /* Big orange knob  */
     position: absolute;
     top: 50%;
     width: 64px;
