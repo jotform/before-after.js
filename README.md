@@ -21,7 +21,7 @@ The [Medium article](https://medium.com/jotform-form-builder/making-a-responsive
 
 #### USAGE
 
-Simply copy the contents of the sample.html to your own page and include the related files.
+Simply copy the contents of the sample.html to your own page. All links are called from a CDN.
 
 
 #### LICENSE
