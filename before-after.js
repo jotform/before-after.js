@@ -21,9 +21,9 @@ function drags(dragElement, resizeElement, container) {
     
     // Calculate the dragging distance on mousemove.
     dragElement.parents().on("mousemove touchmove", function(e) {
-			
-			// Check if it's a mouse or touch event and pass along the correct value
-    	var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+    	
+      // Check if it's a mouse or touch event and pass along the correct value
+      var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
       
       leftValue = moveX + posX - dragWidth;
       
