@@ -14,10 +14,11 @@ The [Medium article](https://medium.com/jotform-form-builder/making-a-responsive
 ![Image comparison](https://d262ilb51hltx0.cloudfront.net/max/800/1*N43g_K5grRctYcudDi3gLQ.gif)
 
 
+#### UPDATES
+- **March 9th:** I was finally able to remove the jQuery Mobile dependency and handle it with native events. If you wish to help, mobile testing is much appreciated since I only have access to a couple of devices.
+
 #### DEPENDECIES
 - [jQuery](http://jquery.com) for ease
-- [jQuery Mobile](http://jquerymobile.com) for registering touchevents.
-
 
 #### USAGE
 
