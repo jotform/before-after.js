@@ -2,12 +2,12 @@
     position: relative;
     overflow: hidden;
 }
- 
+
 .ba-slider img {
     width: 100%;
     display:block;
 }
- 
+
 .ba-slider .resize {
     position: absolute;
     top:0;
@@ -17,41 +17,44 @@
     overflow: hidden;
 }
 
+.ba-slider .resize img {
+  max-width: none;
+}
 
 .ba-slider .handle { /* Thin line seperator */
-  position:absolute; 
+  position:absolute;
   left:50%;
   top:0;
   bottom:0;
   width:4px;
   margin-left:-2px;
- 
+
   background: rgba(0,0,0,.5);
   cursor: ew-resize;
 }
- 
+
 .ba-slider .handle:after {  /* Big orange knob  */
     position: absolute;
     top: 50%;
     width: 64px;
     height: 64px;
     margin: -32px 0 0 -32px;
- 
+
     content:'\21d4';
     color:white;
     font-weight:bold;
     font-size:36px;
     text-align:center;
     line-height:64px;
- 
+
     background: #ffb800; /* @orange */
     border:1px solid #e6a600; /* darken(@orange, 5%) */
     border-radius: 50%;
     transition:all 0.3s ease;
     box-shadow:
-      0 2px 6px rgba(0,0,0,.3), 
+      0 2px 6px rgba(0,0,0,.3),
       inset 0 2px 0 rgba(255,255,255,.5),
-      inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)*/ 
+      inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)*/
 }
 
 .ba-slider .handle.draggable:after {
