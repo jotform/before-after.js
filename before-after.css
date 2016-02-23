@@ -6,6 +6,7 @@
 .ba-slider img {
     width: 100%;
     display:block;
+    max-width:none;
 }
  
 .ba-slider .resize {
