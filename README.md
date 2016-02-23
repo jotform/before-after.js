@@ -15,15 +15,16 @@ The [Medium article](https://medium.com/jotform-form-builder/making-a-responsive
 
 
 #### UPDATES
-- **Feb 23rd, 2016:** before-after is now a jquery plugin, special thanks to [@ramblex](http://github.com/ramblex/). Also CDN links updated and fixed a few issues
+- **Feb 23rd, 2016:** before-after is now a jquery plugin, special thanks to [@ramblex](http://github.com/ramblex/). Also CDN links updated and fixed a few issues.
 - **March 9th, 2015:** I was finally able to remove the jQuery Mobile dependency and handle it with native events. If you wish to help, mobile testing is much appreciated since I can only test a limited number devices.
 
 #### DEPENDENCIES
 - [jQuery](http://jquery.com) for ease
 
 #### USAGE
-
-Simply copy the contents of the sample.html to your own page. All links are called from a CDN.
+    $('.ba-slider').beforeAfter();
+    
+Or you can simply copy the contents of the sample.html to your own page. All links are called from a CDN.
 
 
 #### LICENSE
