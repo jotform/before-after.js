@@ -55,7 +55,7 @@
       inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)*/ 
 }
 
-.ba-slider .handle.draggable:after {
+.ba-slider .handle.ba-draggable:after {
     width: 48px;
     height: 48px;
     margin: -24px 0 0 -24px;
