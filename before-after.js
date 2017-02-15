@@ -44,7 +44,7 @@
           $(this).removeClass('ba-draggable');
           resizeElement.removeClass('.ba-resizable');
         });
-        $('.resizable').css('width', widthValue);
+        $('.ba-resizable').css('width', widthValue);
       }).on('mouseup touchend touchcancel', function(){
         dragElement.removeClass('ba-draggable');
         resizeElement.removeClass('ba-resizable');
