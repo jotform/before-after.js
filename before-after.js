@@ -57,7 +57,10 @@
   }
 
   // Define plugin
-  $.fn.beforeAfter = function() {
+  $.fn.beforeAfter = function(onReady) {
+    onReady = onReady || function() {};
+    onReady();
+
     var cur = this;
     // Adjust the slider
     var width = cur.width()+'px';
