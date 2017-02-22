@@ -15,8 +15,9 @@ The [Medium article](https://medium.com/jotform-form-builder/making-a-responsive
 
 
 #### UPDATES
-- before-after is now a jquery plugin, special thanks to [@ramblex](http://github.com/ramblex/). Also CDN links updated and fixed a few issues.(Feb 23rd, 2016)
-- I was finally able to remove the jQuery Mobile dependency and handle it with native events. If you wish to help, mobile testing is much appreciated since I can only test a limited number devices. (March 9th, 2015)
+- Performance improvements (Feb, 2017)
+- before-after is now a jquery plugin, special thanks to [@ramblex](http://github.com/ramblex/). Also CDN links updated and fixed a few issues.(Feb, 2016)
+- I was finally able to remove the jQuery Mobile dependency and handle it with native events. If you wish to help, mobile testing is much appreciated since I can only test a limited number devices. (March, 2015)
 
 #### DEPENDENCIES
 - [jQuery](http://jquery.com) for ease
