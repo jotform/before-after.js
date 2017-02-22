@@ -1,0 +1,29 @@
+{
+  "name": "before-after.js",
+  "version": "1.0.0",
+  "description": "A jquery plugin for responsive image comparision sliders",
+  "main": "before-after.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jotform/before-after.js.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "image-comparison-slider",
+    "image-comparison",
+    "slider"
+  ],
+  "author": "Ege Gorgulu <ege@jotform.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jotform/before-after.js/issues"
+  },
+  "homepage": "https://github.com/jotform/before-after.js#readme",
+  "dependencies": {
+    "jquery": ">=2.1.3"
+  }
+}
