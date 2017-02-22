@@ -2,7 +2,7 @@
   function drags(dragElement, resizeElement, container) {
     
     // Initialize the dragging event on mousedown.
-    dragElement.on('mousedown touchstart', function(e) {
+    dragElement.on('mousedown.ba-events touchstart.ba-events', function(e) {
       
       dragElement.addClass('ba-draggable');
       resizeElement.addClass('ba-resizable');
@@ -21,7 +21,7 @@
       maxLeft = containerOffset + containerWidth - dragWidth - 10;
       
       // Calculate the dragging distance on mousemove.
-      dragElement.parents().on("mousemove touchmove", function(e) {
+      dragElement.parents().on("mousemove.ba-events touchmove.ba-events", function(e) {
         
         // Check if it's a mouse or touch event and pass along the correct value
         var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
@@ -39,20 +39,16 @@
         widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
         
         // Set the new values for the slider and the handle. 
-        // Bind mouseup events to stop dragging.
-        $('.ba-draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
-          $(this).removeClass('ba-draggable');
-          resizeElement.removeClass('.ba-resizable');
-        });
+        $('.ba-draggable').css('left', widthValue);
         $('.ba-resizable').css('width', widthValue);
-      }).on('mouseup touchend touchcancel', function(){
+      // Bind mouseup events to stop dragging.
+      }).on('mouseup.ba-events touchend.ba-events touchcancel.ba-events', function(){
         dragElement.removeClass('ba-draggable');
         resizeElement.removeClass('ba-resizable');
+        // Unbind all events for performance
+        $(this).off('.ba-events'); 
       });
       e.preventDefault();
-    }).on('mouseup touchend touchcancel', function(e){
-      dragElement.removeClass('ba-draggable');
-      resizeElement.removeClass('ba-resizable');
     });
   }
 
