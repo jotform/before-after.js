@@ -27,6 +27,26 @@ The [Medium article](https://medium.com/jotform-form-builder/making-a-responsive
     
 Or you can simply copy the contents of the sample.html to your own page. All links are called from a CDN.
 
+##### Multiple sliders on the same page
+```
+$('.ba-slider').each(function(){
+     $(this).beforeAfter();
+});
+```
+
+##### Use with Drupal Behaviors
+```
+(function ($, Drupal) { 
+Drupal.behaviors.pronatura_image_comparison = { 
+  attach: function (context, settings) {        
+    $('.ba-slider').each(function(){            
+      $(this).beforeAfter();                    
+    });                 
+  }                     
+};                      
+})(jQuery, Drupal); 
+```
+
 
 #### LICENSE
 
