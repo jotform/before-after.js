@@ -70,5 +70,7 @@
       var width = cur.width()+'px';
       cur.find('.resize img').css('width', width);
     });
+    
+    return this;
   }
 }(jQuery));
