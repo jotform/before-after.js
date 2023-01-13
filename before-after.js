@@ -66,7 +66,7 @@
 
     // Update sliders on resize. 
     // Because we all do this: i.imgur.com/YkbaV.gif
-    $(window).resize(function(){
+    $(window).on('resize', function() {
       var width = cur.width()+'px';
       cur.find('.resize img').css('width', width);
     });
